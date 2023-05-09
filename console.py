@@ -4,14 +4,14 @@ import cmd
 import sys
 
 
-class AirBnB_shell(cmd.Cmd):
+class HBnBShell(cmd.Cmd):
     """The AirBnB shell interpreter, based on cmd module"""
     prompt = "(hbnb) "
-    
+
     def do_quit(self, arg):
         """ implement the quit """
         return (True)
-    
+
     def do_EOF(self, arg):
         """ implement EOF """
         print("")
@@ -22,4 +22,4 @@ class AirBnB_shell(cmd.Cmd):
         pass
 
 
-AirBnB_shell().cmdloop()
+HBnBShell().cmdloop()
